@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job application</title>
+    <script>
+        function internal(){
+            alert("ARE YOU SURE TO SUBMIT!!!");
+        }
+    </script>
+    <Style>
+        body{
+            background-color: gray;
+        }
+        input[type=text],input[type=date],input[type=number],input[type=email],input[type=file],select{
+            width: 200px;
+            background-color: rgb(230, 225, 225);
+            border: 0px solid rgb(230, 225, 225);
+            border-radius: 3px;
+            
+        }
+        button{
+            float: right;
+            background-color: rgb(16, 16, 117);
+            color: white;
+            border-radius: 3px;
+            border: 1px solid rgb(16, 16, 117);
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: grey;
+            color:black
+        }
+    </Style>
+</head>
+<body style="background-image: url(/images/Screenshot\ \(36\).png);">
+    <div style="position: absolute;left: 50%;transform: translate(-50%);text-align: center;background-color: white;border-radius:10px;padding: 5px;top: 100px;">
+      <h3>Job Application(web)</h3>
+      <form>
+        <table border="0px ">
+            <tr>
+                <td style="padding: 5px;">First Name <br> <input type="text" placeholder="Enter First Name" required></td>
+                <td style="padding: 5px;">Last Name<br> <input type="text" placeholder="Enter last Name" required></td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Email <br> <input type="email" placeholder="Enter email" required></td>
+                <td style="padding: 5px;">Job rank<br> 
+                    <select required>
+                        <option value="">Select job role</option>
+                        <option value="GENAREL SECRETARY">GENAREL SECRETARY</option>
+                        <option value="MANEGING DIRECTOR">MANEGING DIRECTOR</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Address</label><br>
+                    <textarea rows="2" cols="54" placeholder="Enter Address"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">City<br> <input type="text" placeholder="Enter city name" required></td>
+                <td style="padding: 5px;">pincode<br> <input type="text" placeholder="Enter pincode Name" maxlength="7" required></td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">D.O.B<br> <input type="date"  required></td>
+                <td style="padding: 5px;">Upload Your CV<br> <input type="file" required></td>
+            </tr>
+        </table><br>
+        <button type="submit" onclick="internal()">Apply Now</button>
+      </form>
+    </div>
+</body>
+</html>
